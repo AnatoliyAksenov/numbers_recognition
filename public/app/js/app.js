@@ -124,7 +124,8 @@ var postData = (blob) => {
         type: 'POST',
     })
     .then( data => {
-        console.log(data.data);
+	    $('ol').append($('<li>'+ JSON.stringify(data) + '</li>'))
+        console.log(data);
     })
 }
 
